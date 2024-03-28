@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "tvos", "android", "web"],
+  "ios": {
+    "modules": ["ExpoViewSizeModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.viewsize.ExpoViewSizeModule"]
+  }
+}
