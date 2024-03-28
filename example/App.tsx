@@ -1,20 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-import * as ExpoViewSize from 'expo-view-size';
+import { ExpoViewSizeView } from "expo-view-size";
+import { SafeAreaView, StyleSheet, Text } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>{ExpoViewSize.hello()}</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text>Hello world</Text>
+      <ExpoViewSizeView title="Hello from ExpoViewSize" />
+      <Text>Goodbye world</Text>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    backgroundColor: "#fff",
   },
 });

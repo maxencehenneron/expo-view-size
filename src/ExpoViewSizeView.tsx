@@ -1,10 +1,10 @@
-import { requireNativeViewManager } from 'expo-modules-core';
-import * as React from 'react';
+import { requireNativeViewManager } from "expo-modules-core";
+import * as React from "react";
 
-import { ExpoViewSizeViewProps } from './ExpoViewSize.types';
+import { ExpoViewSizeViewProps } from "./ExpoViewSize.types";
 
 const NativeView: React.ComponentType<ExpoViewSizeViewProps> =
-  requireNativeViewManager('ExpoViewSize');
+  requireNativeViewManager("ExpoViewSizeModule");
 
 export default function ExpoViewSizeView(props: ExpoViewSizeViewProps) {
   return <NativeView {...props} />;
